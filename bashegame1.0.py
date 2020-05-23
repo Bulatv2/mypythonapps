@@ -60,6 +60,7 @@ while k > 1:
             continue
     print('The app took: ', c)
     print('Total left: ', k)
+print()
 if k == 1 and u == 1:
     print('You won!')
 elif k == 1 and a == 1:
