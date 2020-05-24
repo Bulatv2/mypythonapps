@@ -22,8 +22,10 @@ while k > 1:
         # first step to know how to get win algorithm for app
         if a != 1 and userwr == 1:
             c = 4 - userwr
+            # how to count for app
             c = 1
             k -= c
+            # app's step
             a = 1
             u = 0
         elif a != 1 and userwr == 2:
