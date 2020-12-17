@@ -1,8 +1,8 @@
-# mytimemanager 0.1
+# mytaskmanager 0.1
 # autor Bulat Valiakhmetov
 # 17.12.2020
 
-print("mytimemanager \n")
+print("mytaskmanager \n")
 print(" a - add task \n s - show task \n t - take task \n")
 tasklist = []
 def entcommand():
