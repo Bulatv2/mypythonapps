@@ -4,8 +4,8 @@
 # 16.5.2020
 
 import random
-print('Game Bashe. There are 11 items. Rivals go in turn, for each move \n any of the players can take 1, 2 or 3 items. \n Loses the one who is forced to take the last item.')
-print('Игра Баше. 11 предметов. Соперники ходят по очереди, за каждый ход \n любой  из играющих может взять 1, 2 или 3 предмета. \n Проигрывает тот, кто вынужден \n взять последний предмет.')
+print('Game Bashe. There are 11 items. Rivals go in turn, for each move \nany of the players can take 1, 2 or 3 items. \nLoses the one who is forced to take the last item.')
+print('Игра Баше. 11 предметов. Соперники ходят по очереди, за каждый ход \nлюбой  из играющих может взять 1, 2 или 3 предмета. \nПроигрывает тот, кто вынужден \nвзять последний предмет.')
 k = 11
 # 11 things. The game can have 7, 11, 15, 19, 21, ... things.
 c = 0
