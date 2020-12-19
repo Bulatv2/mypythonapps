@@ -22,6 +22,7 @@ def take():
     del tasklist[0]
     print("done!")
 def show():
-    print(tasklist)
+    for i in range(len(tasklist)):
+        print(tasklist[i])
 while True:
     entcommand()
