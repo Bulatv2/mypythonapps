@@ -19,8 +19,8 @@ def add():
 def save(x):
     tasklist.append(x)
 def take():
+    print("{} done!".format(tasklist[0]))
     del tasklist[0]
-    print("done!")
 def show():
     for i in range(len(tasklist)):
         print(tasklist[i])
