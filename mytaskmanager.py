@@ -1,4 +1,4 @@
-# mytaskmanager 0.1
+# mytaskmanager
 # autor Bulat Valiakhmetov
 # 17.12.2020
 
