@@ -1,5 +1,5 @@
 # mynotebook
-# autor Bulat Valiakhmetov
+# autor Bulat
 
 import tkinter
 import json
