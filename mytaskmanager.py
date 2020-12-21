@@ -1,6 +1,5 @@
 # mytaskmanager
-# autor Bulat Valiakhmetov
-# 17.12.2020
+# autor Bulat
 
 print("mytaskmanager \n")
 print(" a - add task \n s - show task \n t - take task \n")
