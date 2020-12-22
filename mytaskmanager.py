@@ -12,6 +12,8 @@ def entcommand():
         show()
     elif x == "t":
         take()
+    elif x == "q":
+        quit()
 def add():
     y = input("task: ")
     save(y)
