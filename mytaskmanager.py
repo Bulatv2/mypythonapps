@@ -1,8 +1,8 @@
-# mytaskmanager
+# mytaskmanager 0.1
 # autor Bulat
 
 print("mytaskmanager \n")
-print(" a - add task \n s - show task \n t - take task \n")
+print(" a - add task \n s - show task \n t - take task \n h - help\n")
 tasklist = []
 def entcommand():
     x = input("command ")
@@ -12,6 +12,8 @@ def entcommand():
         show()
     elif x == "t":
         take()
+    elif x == "h":
+        help()
     elif x == "q":
         quit()
 def add():
@@ -25,5 +27,7 @@ def take():
 def show():
     for i in range(len(tasklist)):
         print(tasklist[i])
+def help():
+    print("this is taskmanager.")
 while True:
     entcommand()
