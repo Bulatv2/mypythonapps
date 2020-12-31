@@ -1,8 +1,8 @@
 # Bashe Game v1.0
-# Игра Баше v1.0
 # autor Bulat
 
 import random
+
 print('Game Bashe. There are 11 items. Rivals go in turn, for each move \nany of the players can take 1, 2 or 3 items. \nLoses the one who is forced to take the last item.')
 print('Игра Баше. 11 предметов. Соперники ходят по очереди, за каждый ход \nлюбой  из играющих может взять 1, 2 или 3 предмета. \nПроигрывает тот, кто вынужден \nвзять последний предмет.')
 k = 11
