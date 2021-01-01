@@ -1,5 +1,5 @@
 # mynotebook
-# autor Bulat
+# author Bulat
 
 import tkinter
 
