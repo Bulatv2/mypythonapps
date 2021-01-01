@@ -4,7 +4,7 @@
 print("mytaskmanager \n")
 print(" a - add task \n s - show task \n t - take task \n h - help\n")
 tasklist = []
-def entcommand():
+def main():
     x = input("command ")
     if x == "a":
         add()
@@ -25,9 +25,10 @@ def take():
     print("{} done!".format(tasklist[0]))
     del tasklist[0]
 def show():
+    print("to do :")
     for i in range(len(tasklist)):
         print(tasklist[i])
 def help():
     print("this is taskmanager.")
 while True:
-    entcommand()
+    main()
