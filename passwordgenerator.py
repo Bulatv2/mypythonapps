@@ -1,5 +1,6 @@
 # password generator
-# autor Bulat
+# author Bulat
+
 import random
 import json
 print("password generator and save")
