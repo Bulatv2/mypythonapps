@@ -1,5 +1,5 @@
 # mytaskmanager 0.1
-# autor Bulat
+# author Bulat
 
 print("mytaskmanager \n")
 print(" a - add task \n s - show task \n t - take task \n h - help\n")
