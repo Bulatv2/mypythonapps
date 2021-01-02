@@ -28,7 +28,7 @@ def save(x):
 def take():
     progresslist.append(tasklist[0])
     del tasklist[0]
-    print("{} in progress".format(progresslist[0]))
+    print("ok")
 def done():
     donelist.append(progresslist[0])
     del progresslist[0]
