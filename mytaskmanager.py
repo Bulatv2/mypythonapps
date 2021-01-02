@@ -28,17 +28,17 @@ def save(x):
 def take():
     progresslist.append(tasklist[0])
     del tasklist[0]
-    print("ok")
+    print("{} in progress".format(progresslist[0]))
 def done():
     donelist.append(progresslist[0])
     del progresslist[0]
-    print("ok")
+    print("{} is done".format(donelist[0]))
 def show():
     print("to do:")
     for i in range(len(tasklist)):
         print(tasklist[i])
     if len(progresslist) != 0:
-        print("in progress:")
+        print("doing:")
         for i in range(len(progresslist)):
             print(progresslist[i])
             if len(donelist) != 0:
