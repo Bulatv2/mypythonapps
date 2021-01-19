@@ -2,14 +2,14 @@
 # author Bulat
 
 print("Welcome to:\nIluza")
-answer = ""
+words = ""
 hello = "Hello, I am Iluza."
-def sayai(answer):
+def sayai(words):
     name = "Iluza"
-    if answer == "":
-        print("{}:{}".format(name, hello))
+    if words == "":
+        print("{}: {}".format(name, hello))
     else:
-        print("{}:{}".format(name, answer))
+        print("{}: {}".format(name, words))
     request()
 def request():
     user = input("You: ")
@@ -17,15 +17,11 @@ def request():
 def ai(file):
     if file == "":
         sayai(hello)
-    elif file == "Hello! how are you?":
-        words = "I am fine! thank you."
+    elif file == "How are you?":
+        words = "I am good! thank you."
     elif file == "Hello!":
         words = "How are you?"
-    elif file == "I am ":
-        words = "Nice to meet you."
+    elif file == "I am good! thank you.":
+        words = "Ok."
     sayai(words)
-def main():
-    if answer == "":
-        sayai(hello)
-while True:
-    main()
+sayai(words)
