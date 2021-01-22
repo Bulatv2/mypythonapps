@@ -5,7 +5,9 @@ import random
 import json
 
 print("password generator and save")
-s = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+s2 = "abcdefghijklmnopqrstuvwxyz"
+s3 = "0123456789"
 dicw = {}
 def main():
     l = int(input("password length: "))
@@ -20,9 +22,12 @@ def save(x):
             del dicw[n]
         print("save!")
 def generate(x):
-    p = ""
-    for i in range(x):
-        p += random.choice(s)
+    p1 = random.choice(s1)
+    p2 = ""
+    p3 = random.choice(s3)
+    for i in range(x-2):
+        p2 += random.choice(s2)
+    p = p1 + p2 + p3
     print("password is {}".format(p))
     save(p)
 while True:
