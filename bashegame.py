@@ -13,49 +13,50 @@ def main():
     global things
     user = int(input('Enter: number 1, 2 or 3: '))
     things -= user
-    logic(user)
-def printr(take):
+    logic(user, things)
+def printr(apptake, targ):
     global things
     global first
-    if things == 0:
+    if targ == 0:
         print("You win!")
         things = 11
         first = 0
-    elif things == 1:
-        print("You lost! Total left {}".format(things))
+    elif targ == 1:
+        print("You lost! Total left {}".format(targ))
         things = 11
         first = 0
     else:
-        print("The app took {}. Total left {}".format(take, things))
-def logic(usertake):
-    global things
+        print("The app took {}. Total left {}".format(apptake, targ))
+        things = targ
+def logic(usertake, targ):
     global first
-    if things > 1:
+    if targ > 1:
         if first == 0:
             if usertake == 1:
                 first = 1
-                take = 1
-                things -= take
-                printr(take)
+                apptake = 1
+                targ -= apptake
+                printr(apptake, targ)
             elif usertake == 2:
                 first = 1
-                take = random.randint(1, 3)
-                things -= take
-                printr(take)
+                apptake = random.randint(1, 3)
+                targ -= apptake
+                printr(apptake, targ)
             elif usertake == 3:
                 first = 1
-                take = 3
-                things -= take
-                printr(take)
+                apptake = 3
+                targ -= apptake
+                printr(apptake, targ)
         else:
-           take = winalgorithm(usertake)
-           things -= take
-           printr(take)
-    elif things == 1:
-        take = things - 1
-        printr(take)
+           apptake = winalgorithm(usertake)
+           targ -= apptake
+           printr(apptake, targ)
+    elif targ == 1:
+        apptake = 1
+        targ -= apptake
+        printr(apptake, targ)
 def winalgorithm(usertake):
-    take = 4 - usertake
-    return take
+    var = 4 - usertake
+    return var
 while True:
     main()
