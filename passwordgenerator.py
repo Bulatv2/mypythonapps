@@ -12,7 +12,7 @@ def main():
     l = int(input("password length: "))
     generate(l)
 def save(x):
-    print("password is {}".format(x.capitalize()))
+    print("password is {}".format(x))
     inp_q = input("save ? (y/n) ")
     if inp_q == "y":
         n = input("web-site: ")
@@ -27,6 +27,7 @@ def generate(x):
     for i in range(x-1):
         p1 += random.choice(s1)
     p = p1 + p2
-    save(p)
+    u = p.capitalize()
+    save(u)
 while True:
     main()
