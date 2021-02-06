@@ -2,7 +2,7 @@
 # author Bulat
 
 print("mytaskmanager \n")
-print(" a - add task \n s - show task \n t - take task \n d - done task \n h - help\n")
+print(" a - add task \n s - show task \n t - take task \n h - help\n")
 tasklist = []
 def main():
     cd = input("command ")
@@ -14,21 +14,22 @@ def main():
         take()
     elif cd == "h":
         help()
-    elif cd == "q":
-        quit()
 def add():
     task = input("task: ")
     save(task)
-def save(task):
-    tasklist.append(task)
+def save(arg):
+    tasklist.append(arg)
 def take():
     print("{} is done.".format(tasklist[0]))
     del tasklist[0]
 def show():
     print("to do:")
     for i in range(len(tasklist)):
-        print(tasklist[i])
+        tvar = i
+        tvar += 1
+        print("{}) {}".format(tvar, tasklist[i]))
 def help():
     print("this is taskmanager.")
 while True:
     main()
+
