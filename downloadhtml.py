@@ -1,4 +1,4 @@
-# download and parsing web site
+# download web site
 # author Bulat
 
 import requests
